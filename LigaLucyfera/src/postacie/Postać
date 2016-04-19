@@ -1,0 +1,74 @@
+package postacie;
+
+public class Postać { 
+	public double getSiła() {
+		return siła;
+	}
+	public void setSiła(double siła) {
+		this.siła = siła;
+	}
+	public double getObrona() {
+		return obrona;
+	}
+	public void setObrona(double obrona) {
+		this.obrona = obrona;
+	}
+	public double getInteligencja() {
+		return inteligencja;
+	}
+	public void setInteligencja(double inteligencja) {
+		this.inteligencja = inteligencja;
+	}
+	public double getCelność() {
+		return celność;
+	}
+	public void setCelność(double celność) {
+		this.celność = celność;
+	}
+	public double getSzybkość() {
+		return szybkość;
+	}
+	public void setSzybkość(double szybkość) {
+		this.szybkość = szybkość;
+	}
+	public String getImie() {
+		return imie;
+	}
+	public void setImie(String imie) {
+		this.imie = imie;
+	}
+	@Override
+	public String toString() {
+		return "Postać [punkty=" + punkty + "]";
+	}
+	public Postać(double siła, double obrona, double inteligencja,
+			double celność, double szybkość, String imie, double punkty) {
+		super();
+		this.siła = siła;
+		this.obrona = obrona;
+		this.inteligencja = inteligencja;
+		this.celność = celność;
+		this.szybkość = szybkość;
+		this.imie = imie; 
+		this.punkty = punkty;
+	}
+	double siła; 
+	double obrona; 
+	double inteligencja; 
+	double celność; 
+	double szybkość; 
+	String imie; 
+	double punkty;
+	public Postać(double punkty) {
+		super();
+		this.punkty = punkty;
+	}
+	public double getPunkty() {
+		return punkty;
+	}
+	public void setPunkty(double punkty) {
+		this.punkty = punkty;
+	}
+	
+
+}
